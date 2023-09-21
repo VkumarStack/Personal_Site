@@ -5,6 +5,10 @@
     url('./assets/Fonts/Montserrat-Italic-VariableFont_wght.ttf');
 }
 
+body {
+  overflow-x: hidden;
+}
+
 #root {
   width: 100%;
 }
@@ -12,14 +16,15 @@
 :root {
   --main: #1a1d25;
   --secondary: #2f3442;
+  --third: #e1dada;
 
   --main_light: #CECECE;
   --secondary_light: #E5E5E5;
+  --third_light : #3b424f;
 
   font-family: Montserrat;
   line-height: 1.5;
   font-weight: 400;
-  font-style: italic;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -33,25 +38,9 @@
   -webkit-text-size-adjust: 100%;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
 body {
   margin: 0;
   display: flex;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
 }
 
 button {
@@ -62,12 +51,18 @@ button {
   font-weight: 500;
   font-family: inherit;
   background-color: var(--secondary);
-  cursor: pointer;
   transition: border-color 0.25s;
+  box-shadow: 2px 2px var(--third); 
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: var(--third_light);
 }
 
 button:focus,
-button:focus-visible {
+button:focus-visible,
+button.focus {
   color: #000000;
   background-color: var(--secondary_light);
   box-shadow: 2px 2px 5px var(--main_light);
@@ -79,14 +74,19 @@ button:focus-visible {
     color: #000000;
     background-color: var(--main_light);
   }
-  a:hover {
-    color: #747bff;
+
+  button:hover {
+    background-color: var(--third);
   }
+
   button {
     background-color: var(--secondary_light);
+    box-shadow: 2px 2px var(--third_light);
   }
+  
   button:focus, 
-  button:focus-visible {
+  button:focus-visible,
+  button.focus {
     color: #FFFFFF;
     background-color: var(--secondary);
     box-shadow: 2px 2px 5px var(--main);
