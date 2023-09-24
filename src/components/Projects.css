@@ -1,0 +1,78 @@
+div.Projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+div.Projects .project-modal {
+  position: fixed;
+  background-color: black;
+  opacity: 0.6;
+  z-index: 20;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: opacity 1000ms;
+}
+
+div.Projects .project-modal.visible {
+  opacity: 0.8;
+  pointer-events: auto;
+}
+
+div.Projects>h1 {
+  font-size: 3em;
+} 
+
+div.projects-container {
+  width: 85%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 375px);
+  grid-template-rows: min-content;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+div.project-wrapper {
+  position: relative;
+  display: flex; 
+  align-self: center;
+  justify-self: center;
+  justify-content: center;
+  align-items: center;
+}
+
+
+div.project-wrapper img {
+  height: auto;
+  width: 100%;
+  transition: opacity 500ms;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+div.project-wrapper:hover img {
+  opacity: 0.2;
+}
+
+div.project-wrapper div {
+  position: absolute; 
+  visibility: hidden;
+}
+
+div.project-wrapper:hover div {
+  visibility: visible;
+}
+
