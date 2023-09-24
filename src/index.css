@@ -69,6 +69,16 @@ button.focus {
   transition: background-color 500ms, box-shadow 500ms, color 500ms;
 }
 
+h1 {
+  margin: 0px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #000000;

@@ -1,0 +1,93 @@
+div.about {
+  border-bottom: var(--secondary) solid 2px; 
+  
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+}
+
+div.about-text {
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start;
+  max-width: 30%;
+  gap: 10px;
+  padding: 10px; 
+  border-radius: 10px;
+}
+
+div.about-text .name {
+  border-bottom: var(--secondary) solid 2px;
+  padding: 5px 0px;
+}
+
+div.extra-info span {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+div.extra-info span::before {
+  content: "▶";
+}
+
+div.extra-info span.dropdown::before {
+  content: "▷";
+}
+
+div.extra-info p {
+  display: none;
+  margin: 0;
+  padding-left: 25px;
+}
+
+div.extra-info p::before {
+  content: "▴";
+}
+
+div.extra-info span.dropdown~p {
+  display: block; 
+}
+
+div.extra-info span:hover {
+  color: rgb(171, 161, 161);
+}
+
+div.image-wrapper {
+  display: flex;
+  background-color: var(--secondary);
+  max-width: 25%;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+div.image-wrapper img {
+  height: auto;
+  max-width: 100%;
+  border-radius: 10px;
+  filter: grayscale(1);
+  transition: filter 500ms;
+}
+
+div.image-wrapper:hover img {
+  filter: grayscale(0);
+}
+
+@media (prefers-color-scheme: light) {
+  div.about {
+    border-bottom: var(--secondary_light solid 2px);
+  }
+
+
+  div.about-text .name {
+    border-bottom: var(--secondary_light) solid 2px;
+  }
+
+  div.extra-info span:hover {
+    color: rgb(52, 45, 45);
+  }
+
+  div.image-wrapper {
+    background-color: var(--secondary_light);
+  }
+}

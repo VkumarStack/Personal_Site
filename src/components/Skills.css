@@ -1,0 +1,77 @@
+div.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+div.skills>h1 {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 3em;
+}
+
+div.skills-wrapper {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+div.skills-wrapper>div {
+  background-color: var(--secondary);
+  border-radius: 10px;
+  padding: 10px;
+  width: 25%; 
+  display: flex; 
+  flex-direction: column;
+
+  transition: width 500ms;
+  transition: font-size 500ms;
+}
+
+div.skills-wrapper img.svg {
+  transition: width 500ms, height 500ms;
+}
+
+div.skills-wrapper>div:hover {
+  width: 30%;
+  font-size: 1.5rem;
+}
+
+div.skills-wrapper>div:hover img.svg {
+  height: 50px;
+}
+
+div.skills-title-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+div.skills img.svg:hover, div.skills img.svg:focus {
+  filter: invert(1);
+}
+
+ul.skills-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+ul.skills-list li {
+  font-size: 1.2em;
+  text-align: center;
+}
+
+@media (prefers-color-scheme: light) { 
+  div.skills-wrapper>div {
+    background-color: var(--secondary_light);
+  }
+  div.skills img.svg:hover, div.skills img.svg:focus {
+    filter: invert(0);
+  }
+}

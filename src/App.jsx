@@ -1,6 +1,10 @@
 import GithubIcon from './assets/Icons/github-mark.svg'
 import LinkedInIcon from './assets/Icons/linkedin.svg'
 import GmailIcon from './assets/Icons/gmail.svg'
+import About from './components/About'
+import Skills from './components/Skills'
+import Projects from './components/Projects'
+import './App.css'
 
 function App() {
   return (
@@ -18,9 +22,9 @@ function App() {
         </div>
       </nav>
       <div className="content">
-        <p> Blah</p>
-        <h1> Blah</h1>
-        <h1> Blah </h1>
+        <About/>
+        <Skills/>
+        <Projects/>
       </div>
     </div>
   );
