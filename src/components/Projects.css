@@ -52,6 +52,7 @@ div.project-wrapper {
   justify-self: center;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 
@@ -59,7 +60,6 @@ div.project-wrapper img {
   height: auto;
   width: 100%;
   transition: opacity 500ms;
-  cursor: pointer;
   border-radius: 10px;
 }
 
