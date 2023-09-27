@@ -1,0 +1,27 @@
+{
+  "Pixel": {
+    "description": "Pixel-art based social media application with a React frontend and Firebase backend. Users create a drawing each day to be shared with their followers.",
+    "page-link": "https://pixel-c9fc0.web.app/",
+    "github-link": "https://github.com/VkumarStack/Pixel" 
+  },
+  "OCR_Encryption": {
+    "description": "Javascript (React) application demonstrating Optical Character Recognition (OCR) using the Tesseract.js library to recogize text and perform a basic private key cipher or decipher on it.",
+    "page-link": "https://vkumarstack.github.io/OCR_Encryption/",
+    "github-link": "https://github.com/VkumarStack/OCR_Encryption"
+  },
+  "Wither": {
+    "description": "Full-stack Twitter parody application. Utilizes React, Node.js + Express.js, and MongoDB.",
+    "page-link": "https://vkumarstack.github.io/Wither-v2/",
+    "github-link": "https://github.com/VkumarStack/Wither-v2"
+  }, 
+  "Admin_Dashboard": {
+    "description": "Pure Javascript, HTML, and CSS portfolio page. Design adapted from The Odin Project.",
+    "page-link": "https://vkumarstack.github.io/admin-dashboard/",
+    "github-link": "https://github.com/VkumarStack/admin-dashboard"
+  },
+  "Digit_Classifier": {
+    "description": "Pytorch implementation of a basic Digit Classifier using the MNIST dataset. Includes a drawing application to draw attempted digits and classify them in real time.",
+    "page-link": null,
+    "github-link": "https://github.com/VkumarStack/DigitClassifier"
+  }
+}
