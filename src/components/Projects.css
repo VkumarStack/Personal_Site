@@ -97,3 +97,9 @@ div.project-wrapper:hover div {
     background-color: var(--main_light);
   }
 }
+
+@media only screen and (max-device-width: 480px) { 
+  div.modal-info {
+    width: 80%;
+  }
+}

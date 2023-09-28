@@ -75,3 +75,24 @@ ul.skills-list li {
     filter: invert(0);
   }
 }
+
+@media only screen and (max-device-width: 480px) { 
+  div.skills-wrapper {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+  }
+
+  div.skills-wrapper>div {
+    width: 80%;
+  }
+
+  div.skills-wrapper>div:hover {
+    width: 90%;
+    font-size: 1.5rem;
+  }
+  
+  div.skills-wrapper>div:hover img.svg {
+    height: 50px;
+  }
+}

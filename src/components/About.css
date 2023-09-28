@@ -91,3 +91,19 @@ div.image-wrapper:hover img {
     background-color: var(--secondary_light);
   }
 }
+
+@media only screen and (max-device-width: 480px) {
+  div.about {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  div.about-text {
+    max-width: 80%;
+  }
+
+  div.image-wrapper {
+    max-width: 80%;
+  }
+}

@@ -61,5 +61,79 @@ div.content>div:last-child {
   div.content>div {
     border-bottom: var(--secondary_light) solid 2px;
   }
+}
 
+@media only screen and (max-device-width: 480px) { 
+  nav>div {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  div.page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 4vw;
+  }
+
+  div.nav-content {
+    display: flex;
+    gap: 5px;
+  }
+  
+  div.nav-group-enter {
+    position: absolute;
+    z-index: 10;
+    transform: translateX(120%);
+  }
+
+  div.nav-group-enter-active {
+    position: absolute;
+    transform: translateX(0);
+    transition: transform 500ms ease-in-out;
+  }
+
+  div.nav-group-exit {
+    position: absolute;
+    z-index: 10;
+    transform: translateX(0);
+  }
+
+  div.nav-group-exit-active {
+    position: absolute;
+    transform: translateX(-120%);
+    transition: transform 500ms ease-in-out;
+  }
+
+  div.socials-group-enter {
+    position: absolute;
+    overflow: hidden;
+    z-index: 10;
+    transform: translateX(-120%);
+  }
+
+  div.socials-group-enter-active {
+    position: absolute;
+    transform: translateX(0);
+    transition: transform 500ms ease-in-out;
+  }
+
+  div.socials-group-exit {
+    position: absolute;
+    z-index: 10;
+    transform: translateX(0);
+  }
+
+  div.socials-group-exit-active {
+    position: absolute;
+    transform: translateX(120%);
+    transition: transform 500ms ease-in-out;
+  }
 }
