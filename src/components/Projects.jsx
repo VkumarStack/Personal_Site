@@ -73,6 +73,9 @@ class Projects extends React.Component {
           </div>
           <div className="project-wrapper"> 
             <img src={NoteHubScreenshot} id="Note_Hub" alt="Screenshot of tab of 'Note Repository'" onClick={this.handleModal.bind(this)}/>
+            <div>
+              <h1> UCLA Notes Hub </h1>
+            </div>
           </div>
         </div>
       </div>
