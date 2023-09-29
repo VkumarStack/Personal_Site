@@ -4,6 +4,7 @@ import OCREncryptionScreenshot from '../assets/Images/OCR_Encryption_Screenshot.
 import AdminDashboardScreenshot from '../assets/Images/Admin_Dashboard_Screenshot.png'
 import WitherScreenshot from '../assets/Images/Wither_Screenshot.png'
 import DigitClassifierScreenshot from '../assets/Images/Digit_Classifier_Screenshot.png'
+import NoteHubScreenshot from '../assets/Images/Note_Hub_Screenshot.png'
 import ProjectInformation from '../assets/Information/Project_Info.json'
 import './Projects.css'
 
@@ -71,7 +72,7 @@ class Projects extends React.Component {
             </div>
           </div>
           <div className="project-wrapper"> 
-            <img src="https://res.cloudinary.com/storemaven/image/upload/f_auto,q_auto/v1590061617/image8_ks45h6.jpeg" alt="" />
+            <img src={NoteHubScreenshot} id="Note_Hub" alt="Screenshot of tab of 'Note Repository'" onClick={this.handleModal.bind(this)}/>
           </div>
         </div>
       </div>

@@ -23,5 +23,10 @@
     "description": "Pytorch implementation of a basic Digit Classifier using the MNIST dataset. Includes a drawing application to draw attempted digits and classify them in real time.",
     "page-link": null,
     "github-link": "https://github.com/VkumarStack/DigitClassifier"
+  },
+  "Note_Hub": {
+    "description": "Repository containing links to all online notes I have taken at UCLA. Intended for public use for any student interested in the topics or seeking a study aid.",
+    "page-link": null,
+    "github-link": "https://github.com/VkumarStack/UCLA-Note-Hub"
   }
 }
