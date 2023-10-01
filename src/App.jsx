@@ -31,8 +31,10 @@ function App() {
     projectsElement.current = document.getElementsByClassName('projects')[0];
     
     window
-      .matchMedia("(min-width: 480px)")
-      .addEventListener("change", e => setMobile( e.matches));
+      .matchMedia("(max-device-width: 480px)")
+      .addEventListener("change", e => { 
+        setMobile( e.matches) 
+      });
   }, []);
 
 
