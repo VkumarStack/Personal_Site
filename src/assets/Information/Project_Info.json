@@ -24,9 +24,9 @@
     "page-link": null,
     "github-link": "https://github.com/VkumarStack/DigitClassifier"
   },
-  "Note_Hub": {
-    "description": "Repository containing links to all online notes I have taken at UCLA. Intended for public use for any student interested in the topics or seeking a study aid.",
-    "page-link": null,
-    "github-link": "https://github.com/VkumarStack/UCLA-Note-Hub"
+  "Balloon_Pop": {
+    "description": "WebGL game created from scratch with functionality supporting hand controls to allow players to aim and shoot with their fingers.",
+    "page-link": "https://vkumarstack.github.io/Balloon_Pop_V2/",
+    "github-link": "https://github.com/VkumarStack/Balloon_Pop_V2"
   }
 }
